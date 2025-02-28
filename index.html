@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My Love</title>
+    <title>Happy Birthday Gouthami 🎂</title>
     <style>
         body {
-            background-color: #ffccff;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             text-align: center;
             font-family: 'Arial', sans-serif;
             height: 100vh;
@@ -15,10 +15,16 @@
             align-items: center;
             flex-direction: column;
             margin: 0;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         h1 {
             color: #ff0066;
             font-size: 3rem;
+            text-shadow: 2px 2px 5px #ff99cc;
         }
         .heart {
             font-size: 5rem;
@@ -27,14 +33,15 @@
         }
         @keyframes heartbeat {
             0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+            50% { transform: scale(1.3); }
             100% { transform: scale(1); }
         }
         .message {
             font-size: 1.8rem;
-            color: #333;
+            color: #fff;
             margin-top: 20px;
             max-width: 80%;
+            text-shadow: 1px 1px 3px #333;
         }
         .button {
             padding: 15px 30px;
@@ -43,15 +50,19 @@
             color: white;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-top: 20px;
+            box-shadow: 2px 2px 5px #ff66a3;
+        }
+        .button:hover {
+            background-color: #e6005c;
         }
     </style>
 </head>
 <body>
-    <h1>🎉 Happy Birthday My Love! 🎂</h1>
+    <h1>🎉 Happy Birthday Gouthami! 🎂</h1>
     <div class="heart">❤️</div>
-    <p class="message">Wishing you all the happiness in the world. You are my sunshine and my everything! 💖</p>
+    <p class="message">Gouthami, you are my sunshine, my joy, and my everything! May your day be as amazing as you are! 💖</p>
     <button class="button" onclick="openSurprise()">Click for Surprise! 🎁</button>
 
     <script>
@@ -60,14 +71,16 @@
             newWindow.document.write(`
                 <html>
                 <head>
-                    <title>Surprise!</title>
+                    <title>Special Surprise for Gouthami</title>
                     <style>
-                        body { text-align: center; font-family: Arial, sans-serif; background-color: pink; }
-                        h1 { color: red; font-size: 3rem; margin-top: 20%; }
+                        body { text-align: center; font-family: Arial, sans-serif; background: linear-gradient(135deg, #ff758c, #ff7eb3); color: white; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+                        h1 { color: yellow; font-size: 3rem; text-shadow: 2px 2px 5px black; }
+                        p { font-size: 1.5rem; max-width: 80%; }
                     </style>
                 </head>
                 <body>
-                    <h1>I Love You! ❤️ Happy Birthday! 🎉</h1>
+                    <h1>🎉 Happy Birthday My Love! 🎈</h1>
+                    <p>You make my world brighter and my heart warmer! I love you so much! 💖💫</p>
                 </body>
                 </html>
             `);
